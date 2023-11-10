@@ -1,0 +1,9 @@
+[Unit]
+Description=WireGate LDAP auto-sync timer
+
+[Timer]
+OnUnitActiveSec=30min
+OnBootSec=30min
+
+[Install]
+WantedBy=timers.target

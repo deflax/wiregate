@@ -1,0 +1,7 @@
+[Unit]
+Description=WireGate LDAP auto-sync service
+
+[Service]
+Type=simple
+WorkingDirectory=/root/wiregate
+ExecStart=/usr/bin/python3 /root/wiregate/ldapsync.py
