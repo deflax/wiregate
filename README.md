@@ -22,8 +22,6 @@ Tested on Debian 12 bookworm
 
 # Server Tools
 
-./gen-ip-database.sh - generate an ip pool for wireguard peers
-
 ./wgstats.sh - show peer stats similar based on wg show all dump
 
 ./wgldap.sh - tail the log of the wgldapsync service

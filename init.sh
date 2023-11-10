@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+if [ ! -f config ]; then
+    echo "] Create a config file based on config.dist"
+    exit 1
+fi
+
 source config
 
 check_root() {
