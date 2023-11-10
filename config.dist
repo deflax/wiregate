@@ -1,0 +1,15 @@
+public_ifname=ens3
+ip_db=/etc/wireguard/ipdb.pool
+server_endpoint_address=wire.example.com
+net_prefix=69
+allowed_routes="10.15.0.0/16, 192.168.0.0/24"
+monitor_host=10.15.0.15
+email_origin=wire.example.com
+email_host=email-smtp.eu-west-1.amazonaws.com
+email_user=AUSER
+email_pass=APASS
+email_destination=admin@domain
+ldap_server=ldap://idm.example.com
+ldap_login=cn=admin
+ldap_password=PASS
+ldap_basedn=dc=admin,dc=com

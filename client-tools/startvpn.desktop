@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=startvpn
+Exec=/usr/local/bin/wg-rapid profile
+Comment=
+Terminal=true
+Icon=network-vpn
+Type=Application
+Name[en_US]=startvpn
