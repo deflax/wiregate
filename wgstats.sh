@@ -6,6 +6,12 @@ echo "] WireGate plugins:"
 systemctl list-timers --all | grep 'ACTIVATES\|wgldapsync'
 echo ""
 
+if [ ! -d /etc/wireguard/clients ]; then
+	echo "] WireGate peers: "
+	echo "None. Create some :)"
+	exit 1
+fi
+
 echo "] WireGate peers:"
 tmpfile1=$(mktemp /tmp/wgstats.1.XXXXXX)
 tmpfile2=$(mktemp /tmp/wgstats.2.XXXXXX)
