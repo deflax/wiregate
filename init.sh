@@ -53,6 +53,9 @@ apt install jq -y
 # install curl
 apt install curl -y
 
+# install zip and mutt
+apt install mutt zip -y
+
 # create Wireguard interface config
 bash -c "cat > /etc/wireguard/wg0.conf" << ENDOFFILE
 [Interface]
@@ -222,7 +225,7 @@ else
         # install postfix
         echo "postfix postfix/mailname string ${email_origin}" | debconf-set-selections
         echo "postfix postfix/main_mailer_type string 'Internet Site'" | debconf-set-selections
-        apt install -y postfix mailutils libsasl2-2 ca-certificates libsasl2-modules mutt zip
+        apt install -y postfix mailutils libsasl2-2 ca-certificates libsasl2-modules
 
         # setup mail server for email reports
         /usr/sbin/postconf -e "relayhost = [${email_host}]:587" \
