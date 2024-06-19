@@ -61,8 +61,8 @@ cd ..
 mv payload.zip ${stname}_profile.zip
 
 # sent the message
-mutt -s "WireGate VPN for ${email_client}" ${email_destination} -a ${stname}_profile.zip < mail.md
-#mutt -s "WireGate VPN for ${email_client}" ${email_client} -a ${stname}_profile.zip < mail.md
+#mutt -s "WireGate VPN for ${email_client}" ${email_destination} -a ${stname}_profile.zip < mail.md
+mutt -s "WireGate VPN for ${email_client}" ${email_client} -a ${stname}_profile.zip < mail.md
 
 rm -f -r -v payload
 
