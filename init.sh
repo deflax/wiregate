@@ -141,7 +141,7 @@ server:
     verbosity: 1
     logfile: /var/log/unbound/unbound.log
     chroot: ""
-    log-queries: yes
+    log-queries: no
 
     # list of root DNS servers
     root-hints: "/var/lib/unbound/root.hints"
