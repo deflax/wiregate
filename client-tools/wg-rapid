@@ -342,7 +342,7 @@ elif [[ $# -eq 1 ]]; then
     cmd_up
     while true; do
 		clear
-		say "wg-rapid by afx. ver.2204"
+		say "wg-rapid by deflax :]"
 		echo " "
 		say "[q] to stop the VPN connection."
 		say "[d] or close the terminal window to keep the VPN connection setup configured"
