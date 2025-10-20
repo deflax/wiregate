@@ -234,7 +234,8 @@ else
         "smtp_sasl_password_maps = hash:/etc/postfix/sasl_passwd" \
         "smtp_use_tls = yes" \
         "smtp_tls_security_level = encrypt" \
-        "smtp_tls_note_starttls_offer = yes"
+        "smtp_tls_note_starttls_offer = yes" \
+	"inet_protocols = ipv4"
         echo "[${email_host}]:587 ${email_user}:${email_pass}" > /etc/postfix/sasl_passwd
         /usr/sbin/postmap hash:/etc/postfix/sasl_passwd
         chown root:root /etc/postfix/sasl_passwd /etc/postfix/sasl_passwd.db
